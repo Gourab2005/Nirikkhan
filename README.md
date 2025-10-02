@@ -1,1 +1,79 @@
-🤖 Nirikkhan: AI-Powered Hybrid Desktop Client for DevelopersNirikkhan is a free, open-source, and beginner-friendly Hybrid Desktop Application built with Node.js. It is designed to simplify common development and API testing workflows, starting with powerful, secure AI-driven analysis.✨ Why "Hybrid Desktop Application"?Nirikkhan bundles both the user interface (UI) and the backend server into a single executable file (e.g., an .exe).Zero-Setup: Just run the file. It automatically launches a lightweight, local server on your machine and opens the UI in your default web browser.Highly Secure: Since the application runs a local server and not a cloud service, all your data, requests, and sensitive API information remain securely on your machine.💡 Current Feature: AI Error Analysis (Powered by Gemini API)The current version of Nirikkhan provides an invaluable tool for developers:🔬 Intelligent Error Code AnalysisAre you stuck on a cryptic error message, exception stack trace, or complex server response? Nirikkhan uses the Gemini API to provide instant, context-aware analysis:Paste and Solve: Paste any error message, server log, or code snippet into the dedicated AI panel.Root Cause Identification: The AI helps identify the probable root cause of the error.Suggested Fixes: Get actionable recommendations and code examples to resolve the issue quickly.This feature is designed to cut down on time spent searching forums, allowing you to focus on building.🚧 Coming Soon: Core API Testing FeaturesThe full API Testing Platform features are actively being developed and will be released in an upcoming version.The final platform will enable users to:Send and manage HTTP requests (GET, POST, PUT, DELETE).Organize requests into collections and environments.Validate response data, headers, and status codes.[COMING SOON] Automatically generate test cases and assertions using integrated AI features.🔒 Security and Privacy: Our CommitmentAs a locally run, self-contained application, Nirikkhan prioritizes your privacy and security:Local Server: All application logic and data (for API requests, collections, etc.) are handled by the local server running only on your machine.AI Isolation: Only the specific text you manually paste into the AI Error Analysis tool is sent to the Gemini API for processing. No API request data, environment variables, or other local files are ever transmitted without your explicit action.🚀 Getting StartedSince Nirikkhan is a single executable, getting started is simple:Download: Download the latest release executable for your operating system (Windows, macOS, or Linux) from the Releases Page.Launch: Double-click the executable file.Use: A terminal window will open (this is the local server), and your web browser will automatically open the Nirikkhan UI.🤝 ContributionNirikkhan is open-source, and we welcome contributions from the community!Report Issues: Found a bug? Have an idea? Please open an issue on the Issues Page.Code Contribution: Check out our CONTRIBUTING.md (coming soon) for guidelines on development and submitting pull requests.📜 LicenseNirikkhan is released under the [Your License Here, e.g., MIT License].
+<p align="center">
+  <img width="500" height="500" alt="Nirikkhan" src="https://github.com/user-attachments/assets/974de530-bc3c-4ad8-8dbe-f386c42582a1" />
+</p>
+
+<h1 align="center">🤖 Nirikkhan</h1>
+<p align="center">
+  <b>AI-Powered Hybrid Desktop Client for Developers</b>  
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-v1.0.0-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />
+  <img src="https://img.shields.io/badge/Developer-Gourab%20Das-orange?style=flat-square" />
+</p>
+
+---
+
+## 🚀 Release v1.0.0 – First Public Release  
+
+We are proud to announce the very first release of **Nirikkhan**, an **AI-powered Hybrid Desktop Client** designed to simplify **API testing and error debugging**.  
+
+---
+
+## ✨ What’s Included  
+
+- 📡 **Full API Testing Suite**  
+  - Send requests: **GET, POST, PUT, DELETE**  
+  - Manage **collections & environments**  
+  - Validate **headers, data, and status codes**  
+
+- 🤖 **AI Error Analysis (Powered by Gemini API)**  
+  - Add your **Gemini API key** to enable AI features  
+  - Instantly get **probable root cause** and **suggested fixes**  
+  - Save time searching forums and documentation  
+
+- ⚡ **Hybrid Secure Desktop Architecture**  
+  - Distributed as a single executable (`.exe`)  
+  - **Zero setup required**: launches a lightweight local server and opens in your browser  
+  - **All data stays on your machine** for maximum privacy  
+  - Runs **offline** (AI features require internet)  
+
+---
+
+## 🛠️ Planned Features (Coming Soon)  
+
+- [AI-powered] Auto-generated test cases & assertions  
+- Team collaboration tools  
+- And many more exciting updates 🚀  
+
+---
+
+## 📥 Getting Started  
+
+1. Download the executable for your OS from the **[Releases Page](../../releases)**  
+2. Run the file — a lightweight local server will auto-launch  
+3. Your browser will open **Nirikkhan’s interface**  
+4. Start testing APIs with **AI-powered insights**!  
+
+---
+
+## 💬 Feedback  
+
+We’d love to hear from you! Please share your **feedback, suggestions, and bug reports** here:  
+👉 [Submit Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSenea0kimX2JTzQ5Qk7GUFJXqclpgD8dTK7z1shu8-5Vc5WJg/viewform?usp=header)  
+
+---
+
+## 👨‍💻 Developer  
+
+Nirikkhan is developed and maintained by:  
+
+**Gourab Das ( GD )**  
+- 🌐 [LinkedIn – Connect with me](https://www.linkedin.com/in/gourab2005/)  
+
+---
+
+## 📜 License  
+
+Released under the **MIT License**.  
