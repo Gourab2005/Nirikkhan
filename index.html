@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6ME53TJZE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T6ME53TJZE');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIRIKKHAN - Professional API Testing Platform</title>
@@ -421,7 +430,7 @@
                             <span class="font-bold">window</span>
                         </div> -->
                     </div>
-                    <a href="https://github.com/Gourab2005/Nirikkhan/releases/download/API/nirikkhan.zip">
+                    <a href="https://github.com/Gourab2005/Nirikkhan/releases/download/API/nirikkhan.zip" id="zip-download-link">
                     <button class="w-full btn-primary py-3 rounded-lg font-semibold hover:shadow-xl transition">
                         
                         <i class="fas fa-download mr-2"></i>Download ZIP
@@ -449,11 +458,11 @@
                             <span class="font-bold">Windows, macOS, Linux</span>
                         </div> -->
                     </div>
+                    <a href="https://github.com/Gourab2005/Nirikkhan/releases/download/API/nirikkhan.exe" id="exe-download-link">
                     <button class="w-full btn-primary py-3 rounded-lg font-semibold hover:shadow-xl transition">
-                        <a href="https://github.com/Gourab2005/Nirikkhan/releases/download/API/nirikkhan.exe">
                         <i class="fas fa-download mr-2"></i>Download Tool
-                        </a>
                     </button>
+                    </a>
                 </div>
             </div>
             <div class="text-center mt-12">
@@ -667,9 +676,53 @@
             card.style.transition = 'all 0.6s ease';
             observer.observe(card);
         });
+        // --- GA4 Download Tracker ---
+    
+    function trackAndDownload(event, fileName) {
+        // Prevent the browser from immediately starting the download
+        event.preventDefault(); 
+        
+        // 1. FIRE THE GOOGLE ANALYTICS EVENT
+        if (typeof gtag === 'function') {
+            gtag('event', 'download_click', {
+                'file_name': fileName,
+                'event_category': 'Engagement',
+                'event_label': window.location.pathname
+            });
+            console.log(`GA4 Event Sent: download_click for ${fileName}`);
+        } else {
+             console.log(`Tracking (gtag) not loaded. Proceeding with download for ${fileName}.`);
+        }
+
+        // 2. Allow a brief moment for the GA tracking beacon to be sent
+        // Then, manually proceed with the download
+        const link = event.currentTarget;
+        setTimeout(() => {
+            window.location.href = link.href;
+        }, 200); // 200ms delay
+    }
+
+    // --- Attach Listeners to the Buttons ---
+    
+    const zipLink = document.getElementById('zip-download-link');
+    if (zipLink) {
+        zipLink.addEventListener('click', function(e) {
+            // The value 'NIRIKKHAN_ZIP' is what you will see in GA4
+            trackAndDownload(e, 'NIRIKKHAN_ZIP'); 
+        });
+    }
+
+    const exeLink = document.getElementById('exe-download-link');
+    if (exeLink) {
+        exeLink.addEventListener('click', function(e) {
+            // The value 'NIRIKKHAN_EXE' is what you will see in GA4
+            trackAndDownload(e, 'NIRIKKHAN_EXE'); 
+        });
+    }
     </script>
 </body>
 
 </html>
+
 
 
